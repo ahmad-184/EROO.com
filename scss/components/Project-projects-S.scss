@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+$color-black:#1a1a1a;
+$color-orange:#cdb30c;
+$color-BG-gray:#f4f5f9;
+$color-bg-progress:#e6e6e6;
+$color-text-black:rgba(0, 0, 0, 0.8);
+$color-bg-black-projects-S:#232429;
+$font-weight-500: 500;
+$font-weight-600: 600;
+$font-weight-700: 700;
+$font-size-large: 27px;
+$font-size-Xlarge: 34px;
+$font-size-Xsmale: 13px;
+$font-size-medium: 18px;
+
+// components
+    @mixin after-before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #232429;
+        opacity: .6;
+        z-index: -1;
+        transition: top .7s ,bottom .7s;
+    }
+// end 
+
+// maps
+    $urls : (
+        1: url(../img/projects-1.webp),
+        2: url(../img/projects-2.webp),
+        3: url(../img/project-3.webp),
+        4: url(../img/project-4.webp),
+        5: url(../img/project-5.webp),
+        6: url(../img/project-6.webp),
+    );
+// ned
+
+#projects{
+    background-color: $color-BG-gray;
+    position: relative;
+    z-index: 1;
+    &::before{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 72%;
+        z-index: -1;
+        background-color: $color-bg-black-projects-S;
+    }
+
+    .about-projects{
+        font-family: 'Roboto Condensed', sans-serif !important;
+
+        &-title{
+
+            .title{
+
+                .text{
+                    h6{
+                        font-size: $font-size-Xsmale;
+                        color: $color-orange;
+                        letter-spacing: $color-orange;
+                        font-weight: $font-weight-600;
+                    }
+                    h1{
+                        font-weight: $font-weight-700;
+                        font-size: $font-size-large;
+                        letter-spacing: 2px;
+                        line-height: 1.4;
+                    }
+                }
+                .link{
+        
+                    a{
+                        font-size: $font-size-Xsmale;
+                        color: $color-orange;
+                        border: 2px solid $color-orange;
+                        font-weight: $font-weight-600;
+                        padding: 5px 8px;
+                        &:hover{
+                            color: $color-bg-progress;
+                            border-color: white;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .projects-boxes{
+            
+
+            @for $bg-urls from 1 to 7 {
+                
+                .project-single-boxes-#{$bg-urls}{
+                    background: map-get($map: $urls, $key: $bg-urls) center no-repeat !important;
+                    background-size: cover !important;
+                }
+
+            }
+
+            .project-single-boxes{
+                overflow: hidden;
+                border-radius: 10px;
+                height: 360px;
+                background: url(../img/projects-1.webp) center no-repeat;
+                background-size: cover;
+                position: relative;
+                z-index: 1;
+                transition: top .5s , bottom .5s;
+                padding: 0 15px;
+
+                &::before{
+                    @include after-before;
+                    bottom: 100%;
+                }
+                &:hover::before{
+                    bottom: 50%;
+                }
+                &::after{
+                    @include after-before;
+                    top: 70% ;
+                }
+                &:hover::after{
+                    top: 50% !important;
+                }
+
+                .body{
+                    width: 100%;
+                    .title{
+
+                        h6{
+                            color: $color-orange;
+                            font-size: $font-size-Xsmale;
+                            font-weight: $font-weight-600;
+                        }
+
+                        h5{
+                            font-size: 20px;
+                            letter-spacing: 2.5px;
+                            font-weight: $font-weight-600;
+                        }
+                    }
+                    .link{
+                        a{
+                            padding: 8px 10px;
+                            background-color: #cdb30c;
+                            border-radius: 50%;
+                            color: white;
+                            font-size: 20px;
+                            animation: animation 2.5s infinite;
+                            position: relative;
+                            transition: all .2s;
+                            @keyframes animation {
+                                0% {
+                                    box-shadow: 0 0px 0px 8px #cdb30c8f;
+                                }
+                                50% {
+                                    box-shadow: 0 0px 0px 9px rgba(0, 0, 0, 0.123);
+                                }
+                                100%{
+                                    box-shadow: 0 0px 0px 8px #cdb30c8f;
+                                }
+                            }
+                            &:hover{
+                                color: black;
+                                background-color: $color-bg-progress;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

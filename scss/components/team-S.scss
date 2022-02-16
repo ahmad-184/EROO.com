@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+$color-black:#1a1a1a;
+$color-orange:#cdb30c;
+$color-BG-gray:#f4f5f9;
+$color-bg-progress:#e6e6e6;
+$color-text-black:rgba(0, 0, 0, 0.8);
+$font-weight-500: 500;
+$font-weight-600: 600;
+$font-weight-700: 700;
+$font-size-large: 27px;
+$font-size-Xlarge: 34px;
+$font-size-Xsmale: 13px;
+$font-size-medium: 18px;
+
+// components
+    @mixin after-before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 100%;
+        background-color: $color-orange;
+        opacity: .7;
+        transition: all .6s ;
+    }
+// end components
+
+#team{
+
+    .title{
+
+        .text{
+            h6{
+                font-size: $font-size-Xsmale;
+                color: $color-orange;
+                letter-spacing: $color-orange;
+                font-weight: $font-weight-600;
+            }
+            h1{
+                font-weight: $font-weight-700;
+                font-size: $font-size-large;
+                color: $color-text-black;
+                letter-spacing: 2px;
+            }
+        }
+        .link{
+
+            a{
+                font-size: $font-size-Xsmale;
+                color: $color-orange;
+                border: 2px solid $color-orange;
+                font-weight: $font-weight-600;
+                padding: 5px 8px;
+                &:hover{
+                    color: $color-black;
+                    border-color: $color-black;
+                }
+            }
+        }
+    }
+
+    .continer-custom{
+        max-width: 1245px !important;
+        margin: 0 0 0 auto !important;
+
+        .teamBoxses{
+
+            .SingleBoxses{
+                height: 400px;
+                background: url(../img/team-1.webp) top no-repeat;
+                background-size: cover;
+                position: relative;
+                transition: all .6s ;
+                overflow: hidden;
+                &::before{
+                    @include after-before;
+                }
+                &:hover::before{
+                    bottom: 50%;
+                }
+                &::after{
+                    @include after-before;
+                    top: 100% !important;
+                    bottom: 0 !important;
+                }
+                &:hover::after{
+                    top: 50% !important;
+                }
+                
+                .content{
+                    z-index: 1;
+                    width: 100%;
+                    background-color: #1a1a1ac7;
+                    .title{
+                        h5{
+                            font-weight: $font-weight-700 ;
+                            font-size: $font-size-medium;
+                        }
+                        h6{
+                            font-weight: $font-weight-500 ;
+                            font-size: $font-size-Xsmale;
+                            letter-spacing: 1px;
+                        }
+                    }
+                    .links{
+    
+                        span{
+    
+                            padding: 5px 8px;
+                            border-radius: 50%;
+                            border: 2px solid #ffffff47;
+                            &:hover{
+                                border-color: $color-orange;
+                            }
+                            a{
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+            .SingleBoxses-2{
+                background: url(../img/team-2.webp) top no-repeat;
+                background-size: cover;
+            }
+            .SingleBoxses-3{
+                background: url(../img/team-3.webp) top no-repeat;
+                background-size: cover;
+            }
+            .SingleBoxses-4{
+                background: url(../img/team-4.webp) top no-repeat;
+                background-size: cover;
+            }
+            .SingleBoxses-5{
+                background: url(../img/team-5.webp) top no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+}

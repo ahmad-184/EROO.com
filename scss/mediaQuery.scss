@@ -1,0 +1,207 @@
+@media screen and (max-width: 410px) {
+    #header #bg-overlay .overlay-container .overlay-items-bg .title-content h1 {
+        font-size: 40px !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    body::-webkit-scrollbar{
+        background: black;
+        width: 12px;
+    }
+
+    #services .bg-services .services-title h1,#projects .about-projects-title .title .text h1{
+        font-size: 34px !important;
+    }
+    .about-container{
+
+        .title-content{
+
+            .title{
+                h2{
+                    font-size: 34px !important;
+                    line-height: 2.9rem !important;
+                }
+            }
+
+            .bottom-title{
+                left: -5rem;
+            }
+        }
+        .img-content{
+            height: 100% !important;
+        }
+    }
+    #team{
+        .title{
+            .text{
+                h1{
+                    font-size: 33px !important;
+                }
+            }
+        }
+    }
+    .project-single-boxes{
+
+        &::after{
+            top: 100% !important;
+            opacity: .8 !important;
+        }
+        &::before{
+            opacity: .8 !important;
+        }
+
+        .body{
+            opacity: 0;
+            transition: .4s;
+
+            .title{
+                position: relative;
+                left: -50px;
+                transition: all .4s .4s;
+                opacity: 0;
+            }
+
+            .link{
+                position: relative;
+                right: -50px;
+                transition: all .4s .4s;
+                opacity: 0;
+            }
+        }
+        &:hover .body{
+            opacity: 1;
+        }
+        &:hover .body .title{
+            left: 0;
+            opacity: 1;
+        }
+        &:hover .body .link{
+            right: 0;
+            opacity: 1;
+        }
+    }
+
+    .project-works{
+
+        .heading-title{
+    
+            h5{
+                font-size: 34px !important;
+            }
+        }
+
+        .peopleSay-static{
+
+            .--singleBox{
+                width: 25rem ;
+            }   
+        }
+    }
+    
+    #subscribe .subscribe-container .heading-title h5{
+        font-size: 32px !important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    #services .bg-services .services-title h1{
+        font-size: 34px !important;
+    }
+    
+    .single-services-content{
+        transition: all .4s ;
+        .link-content{
+            left: 5rem !important;
+            transition: all .4s  ;
+            opacity: 0;
+        }
+        &:hover .link-content{
+            left: 7rem !important;
+            opacity: 1;
+        }
+    }
+
+    #team{
+
+        .teamBoxses{
+
+            .SingleBoxses{
+                align-items: center !important;
+                transition: all .4s;
+                .content{
+                    opacity: 0 ;
+                    background-color: transparent !important;
+                    transition: all .4s;
+
+                    .links{
+                        span{
+                            position: relative;
+                            top: 50px;
+                            transition: top .5s , opacity .5s;
+                            opacity: 0 !important;
+
+                            &:hover{
+                                border-color: black !important;
+                            }
+
+                            &:hover a{
+                                color: black;
+                            }
+                        }
+                    }
+                }
+
+                &:hover .content{
+                    opacity: 1;
+                }
+
+                @for $delay from 1 to 6 {
+                    .content span:nth-of-type(#{$delay}){
+                        transition-delay: .1s + ($delay * .1s);
+                    }
+                }
+
+                &:hover .content span:nth-child(1){
+                    top: 0;
+                    opacity: 1 !important;
+                    // transition-delay: .1s;
+                }
+
+                &:hover .content span:nth-child(2){
+                    top: 0;
+                    // transition-delay: .2s;
+                    opacity: 1 !important;
+                }
+
+                &:hover .content span:nth-child(3){
+                    top: 0;
+                    // transition-delay: .3s;
+                    opacity: 1 !important;
+                }
+
+                &:hover .content span:nth-child(4){
+                    top: 0;
+                    // transition-delay: .4s;
+                    opacity: 1 !important;
+                }
+
+                &:hover .content span:nth-child(5){
+                    top: 0;
+                    // transition-delay: .5s;
+                    opacity: 1 !important;
+                }
+            }
+        }
+    }
+
+    #team .continer-custom .teamBoxses .SingleBoxses{
+        height: 350px !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+}

@@ -1,0 +1,166 @@
+@media screen and (min-width: 768px) {
+  body::-webkit-scrollbar {
+    background: black;
+    width: 12px;
+  }
+  #services .bg-services .services-title h1, #projects .about-projects-title .title .text h1 {
+    font-size: 34px !important;
+  }
+  .about-container .title-content .title h2 {
+    font-size: 34px !important;
+    line-height: 2.9rem !important;
+  }
+  .about-container .title-content .bottom-title {
+    left: -5rem;
+  }
+  .about-container .img-content {
+    height: 100% !important;
+  }
+  #team .title .text h1 {
+    font-size: 33px !important;
+  }
+  .project-single-boxes::after {
+    top: 100% !important;
+    opacity: .8 !important;
+  }
+  .project-single-boxes::before {
+    opacity: .8 !important;
+  }
+  .project-single-boxes .body {
+    opacity: 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .project-single-boxes .body .title {
+    position: relative;
+    left: -50px;
+    -webkit-transition: all .4s .4s;
+    transition: all .4s .4s;
+    opacity: 0;
+  }
+  .project-single-boxes .body .link {
+    position: relative;
+    right: -50px;
+    -webkit-transition: all .4s .4s;
+    transition: all .4s .4s;
+    opacity: 0;
+  }
+  .project-single-boxes:hover .body {
+    opacity: 1;
+  }
+  .project-single-boxes:hover .body .title {
+    left: 0;
+    opacity: 1;
+  }
+  .project-single-boxes:hover .body .link {
+    right: 0;
+    opacity: 1;
+  }
+  .project-works .heading-title h5 {
+    font-size: 34px !important;
+  }
+  .project-works .peopleSay-static .--singleBox {
+    width: 25rem;
+  }
+  #subscribe .subscribe-container .heading-title h5 {
+    font-size: 32px !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #services .bg-services .services-title h1 {
+    font-size: 34px !important;
+  }
+  .single-services-content {
+    -webkit-transition: all .4s;
+    transition: all .4s;
+  }
+  .single-services-content .link-content {
+    left: 5rem !important;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    opacity: 0;
+  }
+  .single-services-content:hover .link-content {
+    left: 7rem !important;
+    opacity: 1;
+  }
+  #team .teamBoxses .SingleBoxses {
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+  }
+  #team .teamBoxses .SingleBoxses .content {
+    opacity: 0;
+    background-color: transparent !important;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+  }
+  #team .teamBoxses .SingleBoxses .content .links span {
+    position: relative;
+    top: 50px;
+    -webkit-transition: top .5s , opacity .5s;
+    transition: top .5s , opacity .5s;
+    opacity: 0 !important;
+  }
+  #team .teamBoxses .SingleBoxses .content .links span:hover {
+    border-color: black !important;
+  }
+  #team .teamBoxses .SingleBoxses .content .links span:hover a {
+    color: black;
+  }
+  #team .teamBoxses .SingleBoxses:hover .content {
+    opacity: 1;
+  }
+  #team .teamBoxses .SingleBoxses .content span:nth-of-type(1) {
+    -webkit-transition-delay: 0.2s;
+            transition-delay: 0.2s;
+  }
+  #team .teamBoxses .SingleBoxses .content span:nth-of-type(2) {
+    -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+  }
+  #team .teamBoxses .SingleBoxses .content span:nth-of-type(3) {
+    -webkit-transition-delay: 0.4s;
+            transition-delay: 0.4s;
+  }
+  #team .teamBoxses .SingleBoxses .content span:nth-of-type(4) {
+    -webkit-transition-delay: 0.5s;
+            transition-delay: 0.5s;
+  }
+  #team .teamBoxses .SingleBoxses .content span:nth-of-type(5) {
+    -webkit-transition-delay: 0.6s;
+            transition-delay: 0.6s;
+  }
+  #team .teamBoxses .SingleBoxses:hover .content span:nth-child(1) {
+    top: 0;
+    opacity: 1 !important;
+  }
+  #team .teamBoxses .SingleBoxses:hover .content span:nth-child(2) {
+    top: 0;
+    opacity: 1 !important;
+  }
+  #team .teamBoxses .SingleBoxses:hover .content span:nth-child(3) {
+    top: 0;
+    opacity: 1 !important;
+  }
+  #team .teamBoxses .SingleBoxses:hover .content span:nth-child(4) {
+    top: 0;
+    opacity: 1 !important;
+  }
+  #team .teamBoxses .SingleBoxses:hover .content span:nth-child(5) {
+    top: 0;
+    opacity: 1 !important;
+  }
+  #team .continer-custom .teamBoxses .SingleBoxses {
+    height: 350px !important;
+  }
+}
+@media screen and (max-width: 410px) {
+  #header #bg-overlay .overlay-container .overlay-items-bg .title-content h1 {
+      font-size: 40px !important;
+  }
+}
+/*# sourceMappingURL=mediaQuery.css.map */

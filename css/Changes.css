@@ -1,0 +1,62 @@
+#team .continer-custom .teamBoxses .SingleBoxses .content .links span:first-of-type{
+    padding: 5px 11px !important;
+}
+#team .continer-custom .teamBoxses .SingleBoxses .content .links span:last-of-type{
+    padding: 5.5px 9.5px !important;
+}
+#team .title .link a span,#projects .about-projects-title .title .link a span{
+    font-size: 18px !important;
+    position: relative;
+    margin-left: 2px;
+    top: 2px;
+}
+#projects .about-projects .projects-boxes .project-single-boxes .body .link a{
+    padding: 8px 17px !important;
+    font-size: 23px !important;
+}
+#projects .about-projects .projects-boxes .project-single-boxes .body .link a i{
+    position: relative;
+    left: 1px;
+    top: 1px;
+}
+#footer .footer-logo div:nth-child(3) .facebook-icon a{
+    padding: 13px 16.5px !important;
+}
+.BackTopButton a{
+    padding: 8px 16px 11px 16px !important;
+    font-size: 20px;
+}
+#header .carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 12px !important;
+    height: 11px !important;
+    border-radius: 50%;
+    padding: 0;
+    margin-right: 6px !important;
+    margin-left: 6px !important;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255) !important;
+    background-clip: padding-box;
+    opacity: .5;
+    border: 0;
+    transition: opacity .6s ease;
+    position: relative;
+}
+#header  .carousel-indicators [data-bs-target]::after{
+    position: absolute;
+    content: '';
+    top: -3px;
+    left: -3px;
+    bottom: 0px;
+    right: 0;
+    border-radius: 50%;
+    background-color: transparent;
+    width: 18px;
+    height: 17px;
+    border: 1px solid rgb(255, 255, 255);
+}
+#header .carousel-indicators .active {
+    opacity: 1;
+}

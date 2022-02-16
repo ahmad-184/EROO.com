@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+$color-black:#1a1a1a;
+$color-orange:#cdb30c;
+$color-BG-gray:#f4f5f9;
+$color-bg-progress:#e6e6e6;
+$color-text-black:rgba(0, 0, 0, 0.8);
+
+// components
+
+@mixin progress($width) {
+    border-radius: 30px;
+    height: 6px;
+    background-color: $color-bg-progress;
+    div{
+        width: $width;
+        background-color: $color-orange;
+        height: 5px;
+        position: relative;
+    }
+}
+
+@mixin progress-after($content) {
+    content: $content;
+    color: $color-orange;
+    position: absolute;
+    right: 0;
+    top: -30px;
+    font-weight: 600;
+    font-size: 17px;
+}
+// end components
+
+#accordion{
+    background-color: $color-BG-gray;
+    font-family: 'Roboto Condensed', sans-serif !important;
+
+    .accordion-container{
+
+        .accordion-content{
+
+            .accordion-S-1{
+
+                .img-content{
+                    height: 400px;
+                    .img{
+                        width: 100%;
+                        height: 100%;
+                        background: url('../img/accordion-S-1.webp') center no-repeat;
+                        background-size: cover;
+                    }
+                }
+                .title{
+
+                    .heading-h1{
+                        font-weight: 600;
+                        color: $color-text-black;
+                        font-size: 32px;
+                        line-height: 1.5;
+                        letter-spacing: 1px;
+                    }
+
+                    .progresses{
+
+                        .single-progress{
+
+                            .text{
+                                font-weight: 600;
+                                font-size: 14px;
+                                color: #1a1a1ada;
+                            }
+                            .bar{
+                                @include progress(87%) ;
+                                div{
+                                    &::after{
+                                        @include progress-after('95%') ;
+                                    }
+                                }
+                            }
+                        }
+                        .single-progress-1{
+
+                            .bar{
+                                @include progress(80%) ;
+                                div{
+                                    &::after{
+                                        @include progress-after('85%') ;
+                                    }
+                                }
+                            }
+                        }
+                        .single-progress-2{
+
+                            .bar{
+                                @include progress(94%) ;
+                                div{
+                                    &::after{
+                                        @include progress-after('97%') ;
+                                    }
+                                }
+                            }
+                        }
+                        .single-progress-3{
+
+                            .bar{
+                                @include progress(85%) ;
+                                div{
+                                    &::after{
+                                        @include progress-after('89%') ;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .accordion-S-2{
+
+                .heading{
+
+                    h6{
+                        font-weight: 600;
+                        font-size: 14px;
+                        color: $color-orange;
+                        letter-spacing: 1px;
+                    }
+                    h1{
+                        font-weight: 600;
+                        color: $color-text-black;
+                        font-size: 30px;
+                        line-height: 1.4;
+                        letter-spacing: 3px;
+                    }
+                }
+
+                .questions{
+                    .accordion{
+                        .accordion-item{
+                            margin-bottom: 10px;
+                            border: none;
+                            border-radius: 20px !important;
+
+                            h2{
+                                .accordion-button{
+                                    font-size: 18px !important;
+                                    color: $color-text-black !important;
+                                    background-color: white !important;
+                                    box-shadow: none !important;
+                                    &:focus{
+                                        box-shadow: none !important;
+                                        color: white !important;
+                                        background-color: $color-orange !important;
+                                        border: none;
+                                    }
+                                    &:focus-within{
+                                        box-shadow: none !important;
+                                        color: white !important;
+                                        background-color: $color-orange !important;
+                                        border: none;
+                                    }
+                                }
+                            }
+
+                            .accordion-body{
+                                background-color: $color-BG-gray;
+                                padding: 1rem 0;
+
+                                ol{
+                                    li{
+                                        font-size: 18px !important;
+                                        line-height: 2.2;
+                                        color: #5c5c5c;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+#post {
+  font-family: 'Roboto Condensed', sans-serif !important;
+}
+
+#post .heading-title h6 {
+  font-size: 13px;
+  color: #cdb30c;
+  font-weight: 600;
+  padding-bottom: 0.8rem;
+}
+
+#post .heading-title h5 {
+  font-size: 27px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #232429;
+}
+
+#post .PostSingle-box a {
+  width: 100%;
+}
+
+#post .PostSingle-box a .img {
+  width: 100%;
+  height: 270px;
+  background: center no-repeat;
+  background-size: cover;
+  border-radius: 3px 3px 0 0;
+}
+
+#post .PostSingle-box a .img-1 {
+  background-image: url(../img/post-1.webp);
+}
+
+#post .PostSingle-box a .img-2 {
+  background-image: url(../img/post-2.webp);
+}
+
+#post .PostSingle-box a .img-3 {
+  background-image: url(../img/post-3.webp);
+}
+
+#post .PostSingle-box .body {
+  position: relative;
+  -webkit-box-shadow: 0px 10px 16px -7px #dddddd4f;
+          box-shadow: 0px 10px 16px -7px #dddddd4f;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#post .PostSingle-box .body .body-heading {
+  width: 85%;
+  border-radius: 5px;
+  background-color: white;
+  position: absolute;
+  top: -3.4rem;
+  padding: 1rem 0;
+  -webkit-box-shadow: 0px 2px 19px -7px #00000026;
+          box-shadow: 0px 2px 19px -7px #00000026;
+}
+
+#post .PostSingle-box .body .body-heading a span {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  font-size: 13px;
+  padding: 0 3px;
+  color: black;
+  font-weight: 500;
+}
+
+#post .PostSingle-box .body .body-heading a span i {
+  color: #cdb30c;
+  padding-right: 3px;
+}
+
+#post .PostSingle-box .body .body-heading a span:hover {
+  color: #cdb30c;
+}
+
+#post .PostSingle-box .body .footer .text-title a {
+  color: #1a1a1a;
+  font-size: 20px;
+  font-weight: 700;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+#post .PostSingle-box .body .footer .text-title a:hover {
+  color: #cdb30c;
+}
+
+#post .PostSingle-box .body .footer .text-paragraph p {
+  color: rgba(128, 128, 128, 0.822);
+  font-weight: 500;
+  font-size: 17px;
+}
+/*# sourceMappingURL=post-S.css.map */

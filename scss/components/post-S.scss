@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+$color-black:#1a1a1a;
+$color-orange:#cdb30c;
+$color-BG-gray:#f4f5f9;
+$color-bg-progress:#e6e6e6;
+$color-text-black:rgba(0, 0, 0, 0.8);
+$color-bg-black-projects-S:#232429;
+$font-weight-500: 500;
+$font-weight-600: 600;
+$font-weight-700: 700;
+$font-size-large: 27px;
+$font-size-Xlarge: 34px;
+$font-size-Xsmale: 13px;
+$font-size-medium: 18px;
+
+// maps
+
+    $urls : (
+
+        1: url(../img/post-1.webp),
+        2: url(../img/post-2.webp),
+        3: url(../img/post-3.webp),
+
+    );
+
+
+#post{
+    font-family: 'Roboto Condensed', sans-serif !important;
+
+    .heading-title{
+        h6{
+            font-size: $font-size-Xsmale;
+            color: $color-orange;
+            font-weight: $font-weight-600;
+            padding-bottom: 0.8rem;
+        }
+        h5{
+            font-size: $font-size-large;
+            font-weight: $font-weight-700;
+            letter-spacing: 2px;
+            color: $color-bg-black-projects-S;
+        }
+    }
+
+    .PostSingle-box{
+
+        a{
+            width: 100%;
+            .img{
+                width: 100%;
+                height: 270px;
+                background:  center no-repeat;
+                background-size: cover;
+                border-radius: 3px 3px 0 0;
+            }
+
+            @for $var from 1 through 3 {
+                .img-#{$var}{
+                    background-image: map-get($map: $urls, $key: $var);
+                }
+            }
+        }
+
+        .body{
+            position: relative;
+            box-shadow: 0px 10px 16px -7px #dddddd4f;
+            border-radius: 5px;
+            margin-top: 20px;
+
+            .body-heading{
+                width: 85%;
+                border-radius: 5px;
+                background-color: white;
+                position: absolute;
+                top: -3.4rem;
+                padding: 1rem 0;
+                box-shadow: 0px 2px 19px -7px #00000026;
+
+                a{
+                    
+                    span{
+                        transition: all .3s;
+                        font-size: $font-size-Xsmale;
+                        padding: 0 3px;
+                        color: black;
+                        font-weight: $font-weight-500;
+                        i{
+                            color: $color-orange;
+                            padding-right: 3px;
+                        }
+                        &:hover{
+                            color: $color-orange;
+                        }
+                    }
+                }
+            }
+
+
+            .footer{
+                .text-title{
+                    a{
+                        color: $color-black;
+                        font-size: 20px;
+                        font-weight: $font-weight-700;
+                        transition: all .4s;
+                        &:hover{
+                            color: $color-orange;
+                        }
+                    }
+                }
+    
+                .text-paragraph{
+    
+                    p{
+                        color: rgba(128, 128, 128, 0.822);
+                        font-weight: $font-weight-500;
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+}

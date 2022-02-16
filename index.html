@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-app</title>
+    <link rel="icon" href="img/projects-2.webp" type="image/x-icon">
+    <!-- styles -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/services-S.css">
+    <link rel="stylesheet" href="css/mediaQuery.css">
+    <link rel="stylesheet" href="css/gridSystem.css">
+    <link rel="stylesheet" href="css/about-S.css">
+    <link rel="stylesheet" href="css/counter.css">
+    <link rel="stylesheet" href="css/accordion-S.css">
+    <link rel="stylesheet" href="css/team-S.css">
+    <link rel="stylesheet" href="css/Project-projects-S.css">
+    <link rel="stylesheet" href="css/Project-works-S.css">
+    <link rel="stylesheet" href="css/post-S.css">
+    <link rel="stylesheet" href="css/Subscribe-S.css">
+    <link rel="stylesheet" href="css/footer-S.css">
+    <link rel="stylesheet" href="css/Changes.css">
+    <!-- bootstrap  -->
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="d-flex position-absolute justify-content-center align-items-center leoding-content">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+    <header id="header"> 
+        <!-- bg-overlay -->
+        <section id="bg-overlay">
+            <div class="overlay-container">
+                <!-- carousel section -->
+                <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      </div>
+                    <div class="carousel-inner">
+                        <!-- carousel items -->
+                        <div class="carousel-item active">
+                            <div class="overlay-items-bg ">
+                                <div class="container w-100 h-100 d-flex align-items-center ">
+                                    <div class="title-content col-md-10 col-lg-8 col-xl-6">
+                                        <h6 class="text-uppercase">welcome to eroo</h6>
+                                        <h1 class="text-uppercase my-3">digital innovation company that creates solution</h1>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum eos aut doloribus. Ducimus, vero. Famenda .</p>
+                                        <div class="mt-5">
+                                            <a href="#"><strong>get started</strong></a>
+                                            <a href="#">view portfolio</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end carousel items -->
+                        <!-- carousel items -->
+                        <div class="carousel-item">
+                            <div class="overlay-items-bg overlay-items-bg-2">
+                                <div class="container w-100 h-100 d-flex align-items-center ">
+                                    <div class="title-content col-md-10 col-lg-6">
+                                        <h6 class="text-uppercase">creative portfolio</h6>
+                                        <h1 class="text-uppercase my-3">proffesional & creative design solution</h1>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum eos aut doloribus. Ducimus, vero. Famenda .</p>
+                                        <div class="mt-5">
+                                            <a href="#"><strong>get started</strong></a>
+                                            <a href="#">view portfolio</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end carousel items -->
+                    </div>
+                </div>
+                <!-- end carousel section -->
+            </div>
+        </section>
+        <!-- end bg overlay -->
+        <!-- top header -->
+        <section id="top-header" class="py-2 d-none d-lg-block">
+            <div class="container">
+                <!-- top header -->
+                <div class="number-social d-flex align-items-center  justify-content-between ">
+                    <div>
+                        <span class="span-number-social">
+                            Phone no: <span>+00 1234 567</span> or email us: <span>emailsample@email.com</span>
+                        </span>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-dribbble" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- end top header -->
+            </div>
+        </section>
+        <!-- end top header -->
+        <!-- navbar section -->
+        <section id="navbar" class="">
+            <!-- navbar desktop -->
+            <div class="container d-none d-lg-block">
+                <nav class="py-4 d-flex justify-content-between align-items-center">
+                    <div class="logo ">
+                        <span class="span-logo">
+                            eroo
+                        </span>
+                    </div>
+                    <div class="my-3">
+                        <nav class="d-flex text-capitalize ">
+                            <a href="#">home</a>
+                            <a href="#">about</a>
+                            <a href="#">pricing</a>
+                            <a href="#">portfolio</a>
+                            <a href="#">blog</a>
+                            <a href="#">contact</a>
+                        </nav>
+                    </div>
+                </nav>
+            </div>
+            <!-- end navbar desktop -->
+            <!-- navbar mobile size -->
+            <div class="navbar-mobile d-lg-none">
+                <nav class="navbar--- navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <span class="span-logo">eroo</span>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            Menu
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav py-4">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link" href="#">about</a>
+                                <a class="nav-link" href="#">Pricing</a>
+                                <a class="nav-link" href="#">portfolio</a>
+                                <a class="nav-link" href="#">blog</a>
+                                <a class="nav-link" href="#">contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- end navbar mobile size -->
+        </section>
+        <!-- end navbar section -->
+    </header>
+    <main>
+        <div class="BackTopButton">
+            <a href="#"><i class="fa fa-caret-up" aria-hidden="true"></i></a>
+        </div>
+        <!-- services section -->
+        <section id="services">
+            <div class="bg-services py-5">
+                <div class="container my-5">
+                    <div class=" mt-5 row m-auto  align-items-center">
+                        <!-- services title -->
+                        <div class="services-title col-12 col-md-6 m-auto text-white mt-2">
+                            <h1 class="text-uppercase pb-2">we shape the perfect solution</h1>
+                            <p class="mt-3">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                        </div>
+                        <!-- end services title -->
+                        <!-- single services 1 -->
+                        <div class="p-2 single-services mt-4 mt-md-0 col-12 col-md-3 m-auto">
+                            <div class="single-services-content position-relative  text-white p-4 pb-5 ">
+                                <div class="d-flex justify-content-end">
+                                    <span class="icon">
+                                        <i class="fas fa-bullhorn"></i>
+                                    </span>
+                                </div>
+                                <div>
+                                    <h5 class="text-white">
+                                        DIGITAL <br>
+                                        PRODUCTS
+                                    </h5>
+                                </div>
+                                <div class="link-content d-flex justify-content-end  col-lg-3 position-relative">
+                                    <span class="link-arrow">
+                                        <a href="#">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end single services 1 -->
+                        <!-- single services 2 -->
+                        <div class="p-2 mt-4 single-services mt-md-0 col-12 col-md-3 m-auto">
+                            <div class="single-services-content position-relative  text-white p-4 pb-5 ">
+                                <div class="d-flex justify-content-end">
+                                    <span class="icon">
+                                        <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <div>
+                                    <h5 class="text-white">
+                                        ONLINE <br>
+                                        MARKETING
+                                    </h5>
+                                </div>
+                                <div class="link-content d-flex justify-content-end  col-lg-3 position-relative">
+                                    <span class="link-arrow">
+                                        <a href="#">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end single services 2 -->
+                        <!-- single services 3 -->
+                        <div class="p-2 mt-4 single-services mt-md-0 col-12 col-md-3 m-auto mt-md-3">
+                            <div class="single-services-content active position-relative  text-white p-4 pb-5 ">
+                                <div class="d-flex justify-content-end">
+                                    <span class="icon">
+                                        <i class="fas fa-bezier-curve"></i>
+                                    </span>
+                                </div>
+                                <div>
+                                    <h5 class="text-white">
+                                        GRAPHIC <br>
+                                        DESIGN
+                                    </h5>
+                                </div>
+                                <div class="link-content d-flex justify-content-end  col-lg-3 position-relative">
+                                    <span class="link-arrow">
+                                        <a href="#">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end single services 3 -->
+                        <!-- single services 4 -->
+                        <div class="p-2 mt-4 single-services mt-md-0 col-12 col-md-3 m-auto mt-md-3">
+                            <div class="single-services-content position-relative  text-white p-4 pb-5 ">
+                                <div class="d-flex justify-content-end">
+                                    <span class="icon">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </span>
+                                </div>
+                                <div>
+                                    <h5 class="text-white">
+                                        APPLICATION <br>
+                                        DEVELOPMENT
+                                    </h5>
+                                </div>
+                                <div class="link-content d-flex justify-content-end  col-lg-3 position-relative">
+                                    <span class="link-arrow">
+                                        <a href="#">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end single services 4 -->
+                        <!-- single services 5 -->
+                        <div class="p-2 mt-4 single-services mt-md-0 col-12 col-md-3 m-auto mt-md-3">
+                            <div class="single-services-content position-relative  text-white p-4 pb-5 ">
+                                <div class="d-flex justify-content-end">
+                                    <span class="icon">
+                                        <i class="fas fa-desktop"></i>
+                                    </span>
+                                </div>
+                                <div>
+                                    <h5 class="text-white">
+                                        WEB <br>
+                                        DEVELOPMENT
+                                    </h5>
+                                </div>
+                                <div class="link-content d-flex justify-content-end  col-lg-3 position-relative">
+                                    <span class="link-arrow">
+                                        <a href="#">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end single services 5 -->
+                        <!-- single services 6 -->
+                        <div class="p-2 mt-4 single-services mt-md-0 col-12 col-md-3 m-auto mt-md-3">
+                            <div class="single-services-content position-relative  text-white p-4 pb-5 ">
+                                <div class="d-flex justify-content-end">
+                                    <span class="icon">
+                                        <i class="fas fa-palette"></i>
+                                    </span>
+                                </div>
+                                <div>
+                                    <h5 class="text-white">
+                                        UX/UI <br>
+                                        DESIGN
+                                    </h5>
+                                </div>
+                                <div class="link-content d-flex justify-content-end  col-lg-3 position-relative">
+                                    <span class="link-arrow">
+                                        <a href="#">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end single services 6 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end services section -->
+        <!-- about section -->
+        <section id="about">
+            <div class="container">
+                <dvi class="about-container">
+                    <div class="row align-items-center">
+                        <!-- image -->
+                        <div class="img-content d-flex col-md-6  m-auto ">
+                            <div class="img">
+                            </div>
+                        </div>
+                        <!-- end image -->
+                        <!-- big title -->
+                        <div class="title-content py-5 col-md-6 ">
+                            <div class="title">
+                                <h6 class="text-uppercase">welcome to eroo</h6>
+                                <h2 class="text-uppercase my-4 col-md-10">HIGHEST <br>
+                                     CREATIVE STANDARDS</h2>
+                                <p class="m-0">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                <div class="text-white mt-4 col-md-9  bottom-title  position-relative  d-flex align-items-center">
+                                    <div class="icon mx-4">
+                                        <span class="bg-dark">
+                                            <i class="far fa-lightbulb"></i>
+                                        </span>
+                                    </div>
+                                    <div class="title-">
+                                        <span class=" d-block">42</span>
+                                        <span class=" d-block text-uppercase">year of<br>
+                                            experienced
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end big title -->
+                    </div>
+                </dvi>
+            </div>
+        </section>
+        <!-- end about section -->
+        <!-- counter section -->
+        <section id="counter" class="py-5">
+            <div class="container pt-4 pb-5">
+                <div class="row pb-1">
+                    <!-- single box 1 -->
+                    <div class="col-md  single-counter-box d-flex align-items-center mt-4">
+                        <div class="icon mr-3">
+                            <span>
+                                <img src="icon-png/documents.png" alt="">
+                            </span>
+                        </div>
+                        <div class="title text-white">
+                            <span class="d-block">4,800</span>
+                            <span class="d-block">PROJECT COMPLETED</span>
+                        </div>
+                    </div>
+                    <!-- end single box 1 -->
+                    <!-- single box 2 -->
+                    <div class="col-md  single-counter-box d-flex align-items-center mt-4">
+                        <div class="icon mr-3">
+                            <span>
+                                <img src="icon-png/waiter.png" alt="">
+                            </span>
+                        </div>
+                        <div class="title text-white">
+                            <span class="d-block">1,000</span>
+                            <span class="d-block">OUR STAFF</span>
+                        </div>
+                    </div>
+                    <!-- end single box 2 -->
+                    <!-- single box 3 -->
+                    <div class="col-md  single-counter-box d-flex align-items-center mt-4">
+                        <div class="icon mr-3">
+                            <span>
+                                <img src="icon-png/customer-service.png" alt="">
+                            </span>
+                        </div>
+                        <div class="title text-white">
+                            <span class="d-block">350</span>
+                            <span class="d-block">SERVICES PROVIDE</span>
+                        </div>
+                    </div>
+                    <!-- end single box 3 -->
+                    <!-- single box 4 -->
+                    <div class="col-md  single-counter-box d-flex align-items-center mt-4">
+                        <div class="icon mr-3">
+                            <span>
+                                <img src="icon-png/review.png" alt="">
+                            </span>
+                        </div>
+                        <div class="title text-white">
+                            <span class="d-block">7,650</span>
+                            <span class="d-block">HAPPY CUSTOMERS</span>
+                        </div>
+                    </div>
+                    <!-- end single box 4 -->
+                </div>
+            </div>
+        </section>
+        <!-- end counter section -->
+        <!-- accordion section -->
+        <section id="accordion" class="py-5">
+            <div class="accordion-container container py-5">
+                <div class="row accordion-content align-items-center">
+                    <!-- accorsion section-1 -->
+                    <div class="accordion-S-1 order-md-2 col-md-6">
+                        <!-- accordion image -->
+                        <div class="img-content">
+                            <div class="img"></div>
+                        </div>
+                        <!-- end accordion image -->
+                        <!-- accordion text content -->
+                        <div class="title mt-4 col-11 col-lg-12">
+                            <h1 class="heading-h1">
+                                WE ARE VERY <br>
+                                EXPERIENCED & PROFESSIONALS
+                            </h1>
+                            <div class="progresses mt-4">
+                                <!-- single progress 1 -->
+                                <div class="single-progress mb-3">
+                                    <div class="text">
+                                        <p class="mb-2">CREATIVE DESIGN</p>
+                                    </div>
+                                    <div class="bar">
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <!-- end single progress 1 -->
+                                <!-- single progress 2 -->
+                                <div class="single-progress mb-3 single-progress-1">
+                                    <div class="text">
+                                        <p class="mb-2">PRODUCT ENGINEERING</p>
+                                    </div>
+                                    <div class="bar">
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <!-- end single progress 2 -->
+                                <!-- single progress 3 -->
+                                <div class="single-progress mb-3 single-progress-2">
+                                    <div class="text">
+                                        <p class="mb-2">MARKETING STRATEGY</p>
+                                    </div>
+                                    <div class="bar">
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <!-- end single progress 3 -->
+                                <!-- single progress 4 -->
+                                <div class="single-progress mb-3 single-progress-3">
+                                    <div class="text">
+                                        <p class="mb-2">SUPPORT TIPS</p>
+                                    </div>
+                                    <div class="bar">
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <!-- end single progress 4 -->
+                            </div>
+                        </div>
+                        <!-- end accordion text content -->
+                    </div>
+                    <!-- end accorsion section-1 -->
+                    <div class="accordion-S-2 order-md-1 col-md-6 mt-5 mt-md-0 pt-3">
+                        <div class="heading pb-5">
+                            <h6 class="mb-3">FREEQUESNTLY ASK QUESTION</h6>
+                            <h1>FREQUENTLY <br>
+                                ASK QUESTION</h1>
+                        </div>
+                        <div class="questions">
+                            <div class="accordion" id="accordionPanelsStayOpenExample">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                    <button class="accordion-button text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                      how to fixed a problem ?
+                                    </button>
+                                  </h2>
+                                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                    <div class="accordion-body">
+                                      <ol>
+                                          <li>Far far away, behind the word mountains</li>
+                                          <li>Consonantia, there live the blind texts</li>
+                                          <li>When she reached the first hills of the Italic Mountains</li>
+                                          <li>Bookmarksgrove, the headline of Alphabet Village</li>
+                                          <li>Separated they live in Bookmarksgrove right</li>
+                                      </ol>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                    <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                      how to manage ore website ?
+                                    </button>
+                                  </h2>
+                                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                    <div class="accordion-body">
+                                        <ol>
+                                            <li>Far far away, behind the word mountains</li>
+                                            <li>Consonantia, there live the blind texts</li>
+                                            <li>When she reached the first hills of the Italic Mountains</li>
+                                            <li>Bookmarksgrove, the headline of Alphabet Village</li>
+                                            <li>Separated they live in Bookmarksgrove right</li>
+                                        </ol>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                    <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                      hoe the grow yor investment funds ?
+                                    </button>
+                                  </h2>
+                                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                    <div class="accordion-body">
+                                        <ol>
+                                            <li>Far far away, behind the word mountains</li>
+                                            <li>Consonantia, there live the blind texts</li>
+                                            <li>When she reached the first hills of the Italic Mountains</li>
+                                            <li>Bookmarksgrove, the headline of Alphabet Village</li>
+                                            <li>Separated they live in Bookmarksgrove right</li>
+                                        </ol>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingFoure">
+                                      <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFoure" aria-expanded="false" aria-controls="panelsStayOpen-collapseFoure">
+                                        what are those requirements for businesses ?
+                                      </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseFoure" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFoure">
+                                      <div class="accordion-body">
+                                        <ol>
+                                            <li> Far far away, behind the word mountains</li>
+                                            <li> Consonantia, there live the blind texts</li>
+                                            <li> When she reached the first hills of the Italic Mountains</li>
+                                            <li> Bookmarksgrove, the headline of Alphabet Village</li>
+                                            <li> Separated they live in Bookmarksgrove right</li>
+                                        </ol>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end accordion section -->
+        <!-- team section -->
+        <section id="team" class="py-5 my-5">
+            <div class="container">
+                <div class="team-content">
+                    <!-- title section -->
+                    <div class="title d-md-flex justify-content-md-between align-items-md-center">
+                        <div class="text pb-4 ">
+                            <h6 class="pb-3">MEET THE TEAM</h6>
+                            <h1>PROFESSIONAL <br>
+                                CREATIVE TEAM MEMBERS</h1>
+                        </div>
+                        <div class="link">
+                            <a href="#" class="text-uppercase">view all members <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a>
+                        </div>
+                    </div>
+                    <!-- end title section -->
+                </div>
+            </div>
+            <div class="container-fluid continer-custom">
+                <!-- team boxses -->
+                <div class="teamBoxses d-flex flex-wrap m-auto  justify-content-center justify-content-xl-end py-3 mt-3">
+                    <!-- single boxses 1 -->
+                    <div class="SingleBoxses d-flex align-items-end col-12 col-md-4 col-lg mb-3 mb-md-0 ">
+                        <div class="content text-center py-3">
+                            <div class="title text-white">
+                                <h5>LLOYD WILSON</h5>
+                                <h6>WEB DEVELOPER</h6>
+                            </div>
+                            <div class="links py-3 text-white">
+                                <span><a href="#" class="text-white" ><i class="fa fa-facebook" aria-hidden="true"></i></a></span>
+                                <span class="mx-1 text-white"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></span>
+                                <span class="me-1 text-white"><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></span>
+                                <span><a href="#"  class="text-white" ><i class="fa fa-instagram" aria-hidden="true"></i></a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end single boxses 1 -->
+                    <!-- single boxses 2 -->
+                    <div class="SingleBoxses SingleBoxses-2 d-flex align-items-end col-12 col-md-4 col-lg mb-3 mb-md-0 ">
+                        <div class="content text-center py-3">
+                            <div class="title text-white">
+                                <h5>LIAM NEIL</h5>
+                                <h6>GRAPHIC DESIGNER</h6>
+                            </div>
+                            <div class="links py-3 text-white">
+                                <span><a href="#" class="text-white" ><i class="fa fa-facebook" aria-hidden="true"></i></a></span>
+                                <span class="mx-1 text-white"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></span>
+                                <span class="me-1 text-white"><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></span>
+                                <span><a href="#"  class="text-white" ><i class="fa fa-instagram" aria-hidden="true"></i></a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end single boxses 2 -->
+                    <!-- single boxses 3 -->
+                    <div class="SingleBoxses SingleBoxses-3 d-flex align-items-end col-12 col-md-4 col-lg mb-3 mb-md-0 ">
+                        <div class="content text-center py-3">
+                            <div class="title text-white">
+                                <h5>ALEN BROKE</h5>
+                                <h6>SYSTEM ANALYTIC</h6>
+                            </div>
+                            <div class="links py-3 text-white">
+                                <span><a href="#" class="text-white" ><i class="fa fa-facebook" aria-hidden="true"></i></a></span>
+                                <span class="mx-1 text-white"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></span>
+                                <span class="me-1 text-white"><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></span>
+                                <span><a href="#"  class="text-white" ><i class="fa fa-instagram" aria-hidden="true"></i></a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end single boxses 3 -->
+                    <!-- single boxses 4 -->
+                    <div class="SingleBoxses SingleBoxses-4 d-flex align-items-end col-12 col-md-4 col-lg mb-3 mb-md-0 mt-md-2 mt-lg-0 ">
+                        <div class="content text-center py-3">
+                            <div class="title text-white">
+                                <h5>JOHN HAYES</h5>
+                                <h6>MARKETING</h6>
+                            </div>
+                            <div class="links py-3 text-white">
+                                <span><a href="#" class="text-white" ><i class="fa fa-facebook" aria-hidden="true"></i></a></span>
+                                <span class="mx-1 text-white"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></span>
+                                <span class="me-1 text-white"><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></span>
+                                <span><a href="#"  class="text-white" ><i class="fa fa-instagram" aria-hidden="true"></i></a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end single boxses 4 -->
+                    <!-- single boxses 5 -->
+                    <div class="SingleBoxses SingleBoxses-5 d-flex align-items-end col-12 col-md-4 col-lg mt-md-2 mt-lg-0 ">
+                        <div class="content text-center py-3">
+                            <div class="title text-white">
+                                <h5>LLOYD WILSON</h5>
+                                <h6>WEB DEVELOPER</h6>
+                            </div>
+                            <div class="links py-3 text-white">
+                                <span><a href="#" class="text-white" ><i class="fa fa-facebook" aria-hidden="true"></i></a></span>
+                                <span class="mx-1 text-white"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></span>
+                                <span class="me-1 text-white"><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></span>
+                                <span><a href="#"  class="text-white" ><i class="fa fa-instagram" aria-hidden="true"></i></a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end single boxses 5 -->
+                </div>
+                <!-- end team boxses -->
+            </div>
+        </section>
+        <!-- end team section -->
+        <!-- Projects section -->
+        <section id="projects" class="py-5">
+            <div class="about-projects mb-5">
+                <div class="container">
+                    <div class="about-projects-title text-white">
+                        <!-- title section -->
+                        <div class="title d-md-flex pb-3 justify-content-md-between align-items-md-center">
+                            <div class="text  mb-4">
+                                <h6 class="pb-3 text-uppercase">
+                                    Recent Portfolio</h6>
+                                <h1 class="text-uppercase"> 
+                                    We Have Done<br>
+                                    Many Latest Projects</h1>
+                            </div>
+                            <div class="link">
+                                <a href="#" class="text-uppercase">view all members <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a>
+                            </div>
+                        </div>
+                        <!-- end title section -->
+                        <div class="projects-boxes  mt-5">
+                            <div class="row">
+                                <!-- single boxses 1 -->
+                                <div class="box-1 col-12  col-md-4 mb-4">
+                                    <div class="project-single-boxes project-single-boxes-1 d-flex align-items-end ">
+                                        <div class="body d-flex justify-content-between align-items-center pb-3">
+                                            <div class="title">
+                                                <h6 class="text-uppercase">Web Application</h6>
+                                                <h5 class="text-uppercase">Interior Design</h5>
+                                            </div>
+                                            <div class="link">
+                                                <a href=""><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end single boxses 1 -->
+                                <!-- single boxses 2 -->
+                                <div class="box-2 col-12  col-md-4 mb-4">
+                                    <div class="project-single-boxes project-single-boxes-2 d-flex align-items-end ">
+                                        <div class="body d-flex justify-content-between align-items-center pb-3">
+                                            <div class="title">
+                                                <h6 class="text-uppercase">Web Application</h6>
+                                                <h5 class="text-uppercase">Interior Design</h5>
+                                            </div>
+                                            <div class="link">
+                                                <a href=""><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end single boxses 2 -->
+                                <!-- single boxses 3 -->
+                                <div class="box-3 col-12 col-md-4 mb-4">
+                                    <div class="project-single-boxes project-single-boxes-3 d-flex align-items-end ">
+                                        <div class="body d-flex justify-content-between align-items-center pb-3">
+                                            <div class="title">
+                                                <h6 class="text-uppercase">Web Application</h6>
+                                                <h5 class="text-uppercase">Interior Design</h5>
+                                            </div>
+                                            <div class="link">
+                                                <a href=""><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end single boxses 3 -->
+                                <!-- single boxses 4 -->
+                                <div class="box-4 col-12 col-md-4 mb-4">
+                                    <div class="project-single-boxes project-single-boxes-4 d-flex align-items-end ">
+                                        <div class="body d-flex justify-content-between align-items-center pb-3">
+                                            <div class="title">
+                                                <h6 class="text-uppercase">Web Application</h6>
+                                                <h5 class="text-uppercase">Interior Design</h5>
+                                            </div>
+                                            <div class="link">
+                                                <a href=""><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end single boxses 4 -->
+                                <!-- single boxses 5 -->
+                                <div class="box-5 col-12 col-md-4 mb-4">
+                                    <div class="project-single-boxes project-single-boxes-5 d-flex align-items-end ">
+                                        <div class="body d-flex justify-content-between align-items-center pb-3">
+                                            <div class="title">
+                                                <h6 class="text-uppercase">Web Application</h6>
+                                                <h5 class="text-uppercase">Interior Design</h5>
+                                            </div>
+                                            <div class="link">
+                                                <a href=""><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end single boxses 5 -->
+                                <!-- single boxses 6 -->
+                                <div class="box-6 col-12 col-md-4 mb-4">
+                                    <div class="project-single-boxes project-single-boxes-6 d-flex align-items-end ">
+                                        <div class="body d-flex justify-content-between align-items-center pb-3">
+                                            <div class="title">
+                                                <h6 class="text-uppercase">Web Application</h6>
+                                                <h5 class="text-uppercase">Interior Design</h5>
+                                            </div>
+                                            <div class="link">
+                                                <a href=""><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end single boxses 6 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-works mt-5 py-5">
+                <div class="container">
+                    <div class="heading-title mb-5">
+                        <h6 class="text-uppercase pb-2">Testimonial</h6>
+                        <h5 class="text-uppercase">
+                            People Say <br>
+                            About Our Works
+                        </h5>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="peopleSay pt-3">
+                        <div class="carousel">
+                            <div id="carouselExampleDark" class="d-md-none carousel carousel-dark slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active" data-bs-interval="10000">
+                                    <!-- single box 1 -->
+                                    <div class="singleBox p-4">
+                                        <div class="body">
+                                            <p>Far far away,behind the world mountains, far from the countries vokalia and consonantia, there live the blind texts.</p>
+                                        </div>
+                                        <div class="footer d-flex align-items-center">
+                                            <div>
+                                                <img class="img-fluid" src="img/PeopleSay.webp" alt="roger scott">
+                                            </div>
+                                            <div>
+                                                <div class="stars">
+                                                    <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                    <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                    <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                    <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                    <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                </div>
+                                                <div class="text pt-2">
+                                                    <h5 class="text-capitalize">roger scott</h5>
+                                                    <h6 class="text-uppercase">marketing manager</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end single box 1-->
+                                  </div>
+                                  <div class="carousel-item" data-bs-interval="2000">
+                                    <!-- single box 1 -->
+                                    <div class="singleBox p-4">
+                                        <div class="body">
+                                            <p>Far far away,behind the world mountains, far from the countries vokalia and consonantia, there live the blind texts.</p>
+                                        </div>
+                                        <div class="footer d-flex align-items-center">
+                                            <div>
+                                                <img class="img-fluid" src="img/PeopleSay-2.webp" alt="roger scott">
+                                            </div>
+                                            <div>
+                                                <div class="stars">
+                                                    <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                    <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                    <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                    <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                    <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                </div>
+                                                <div class="text pt-2">
+                                                    <h5 class="text-capitalize">roger scott</h5>
+                                                    <h6 class="text-uppercase">marketing manager</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end single box 1-->
+                                  </div>
+                                  <div class="carousel-item">
+                                    <!-- single box 1 -->
+                                    <div class="singleBox p-4">
+                                        <div class="body">
+                                            <p>Far far away,behind the world mountains, far from the countries vokalia and consonantia, there live the blind texts.</p>
+                                        </div>
+                                        <div class="footer d-flex align-items-center">
+                                            <div>
+                                                <img class="img-fluid" src="img/PeopleSay-3.webp" alt="roger scott">
+                                            </div>
+                                            <div>
+                                                <div class="stars">
+                                                    <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                    <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                    <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                    <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                    <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                </div>
+                                                <div class="text pt-2">
+                                                    <h5 class="text-capitalize">roger scott</h5>
+                                                    <h6 class="text-uppercase">marketing manager</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end single box 1-->
+                                  </div>
+                                  <div class="carousel-item">
+                                    <!-- single box 1 -->
+                                    <div class="singleBox p-4">
+                                        <div class="body">
+                                            <p>Far far away,behind the world mountains, far from the countries vokalia and consonantia, there live the blind texts.</p>
+                                        </div>
+                                        <div class="footer d-flex align-items-center">
+                                            <div>
+                                                <img class="img-fluid" src="img/PeopleSay.webp" alt="roger scott">
+                                            </div>
+                                            <div>
+                                                <div class="stars">
+                                                    <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                    <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                    <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                    <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                    <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                </div>
+                                                <div class="text pt-2">
+                                                    <h5 class="text-capitalize">roger scott</h5>
+                                                    <h6 class="text-uppercase">marketing manager</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end single box 1-->
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="d-none PeopleSay-container d-md-block">
+                                <div class="peopleSay-static d-flex flex-nowrap">
+                                    <!-- single box 1 -->
+                                    <div class="col-3 me-3 mb-2 --singleBox">
+                                        <div class="singleBox p-4">
+                                            <div class="body">
+                                                <p>Far far away,behind the world mountains, far from the countries vokalia and consonantia, there live the blind texts.</p>
+                                            </div>
+                                            <div class="footer d-flex align-items-center">
+                                                <div>
+                                                    <img class="img-fluid" src="img/PeopleSay.webp" alt="roger scott">
+                                                </div>
+                                                <div>
+                                                    <div class="stars">
+                                                        <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                        <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                        <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                        <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                        <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                    </div>
+                                                    <div class="text pt-2">
+                                                        <h5 class="text-capitalize">roger scott</h5>
+                                                        <h6 class="text-uppercase">marketing manager</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end single box 1-->
+                                    <!-- single box 1 -->
+                                    <div class="col-3 me-3 mb-2 --singleBox">
+                                        <div class="singleBox p-4">
+                                            <div class="body">
+                                                <p>Far far away,behind the world mountains, far from the countries vokalia and consonantia, there live the blind texts.</p>
+                                            </div>
+                                            <div class="footer d-flex align-items-center">
+                                                <div>
+                                                    <img class="img-fluid" src="img/PeopleSay-2.webp" alt="roger scott">
+                                                </div>
+                                                <div>
+                                                    <div class="stars">
+                                                        <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                        <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                        <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                        <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                        <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                    </div>
+                                                    <div class="text pt-2">
+                                                        <h5 class="text-capitalize">roger scott</h5>
+                                                        <h6 class="text-uppercase">marketing manager</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end single box 1-->
+                                    <!-- single box 1 -->
+                                    <div class="col-3 me-3 mb-2 --singleBox">
+                                        <div class="singleBox p-4">
+                                            <div class="body">
+                                                <p>Far far away,behind the world mountains, far from the countries vokalia and consonantia, there live the blind texts.</p>
+                                            </div>
+                                            <div class="footer d-flex align-items-center">
+                                                <div>
+                                                    <img class="img-fluid" src="img/PeopleSay-3.webp" alt="roger scott">
+                                                </div>
+                                                <div>
+                                                    <div class="stars">
+                                                        <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                        <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                        <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                        <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                        <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                    </div>
+                                                    <div class="text pt-2">
+                                                        <h5 class="text-capitalize">roger scott</h5>
+                                                        <h6 class="text-uppercase">marketing manager</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end single box 1-->
+                                    <!-- single box 1 -->
+                                    <div class="col-3 me-3 mb-2 --singleBox">
+                                        <div class="singleBox p-4">
+                                            <div class="body">
+                                                <p>Far far away,behind the world mountains, far from the countries vokalia and consonantia, there live the blind texts.</p>
+                                            </div>
+                                            <div class="footer d-flex align-items-center">
+                                                <div>
+                                                    <img class="img-fluid" src="img/PeopleSay.webp" alt="roger scott">
+                                                </div>
+                                                <div>
+                                                    <div class="stars">
+                                                        <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                        <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                        <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                        <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                        <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                    </div>
+                                                    <div class="text pt-2">
+                                                        <h5 class="text-capitalize">roger scott</h5>
+                                                        <h6 class="text-uppercase">marketing manager</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end single box 1-->
+                                    <!-- single box 1 -->
+                                    <div class="col-3 mb-2 --singleBox">
+                                        <div class="singleBox p-4">
+                                            <div class="body">
+                                                <p>Far far away,behind the world mountains, far from the countries vokalia and consonantia, there live the blind texts.</p>
+                                            </div>
+                                            <div class="footer d-flex align-items-center">
+                                                <div>
+                                                    <img class="img-fluid" src="img/PeopleSay-3.webp" alt="roger scott">
+                                                </div>
+                                                <div>
+                                                    <div class="stars">
+                                                        <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                        <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                        <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                        <span class="me-1"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                        <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                    </div>
+                                                    <div clas      s="text pt-2">
+                                                        <h5 class="text-capitalize">roger scott</h5>
+                                                        <h6 class="text-uppercase">marketing manager</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end single box 1-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end Projects section -->
+        <!-- post section  -->
+        <section id="post" class="mt-5 pt-3">
+            <div class="container">
+                <div class="row pt-5">
+                    <div class="heading-title col-12 m-auto text-center mb-5">
+                        <h6 class="text-uppercase">OUR BLOG</h6>
+                        <h5 class="text-uppercase">RECENT POST</h5>
+                    </div>
+                    <!-- single box post -->
+                    <div class="PostSingle-box mb-4 mb-md-0 col-md-4">
+                        <a href="#">
+                            <div class="img img-1"></div>
+                        </a>
+                        <div class="body d-flex justify-content-center">
+                            <div class="body-heading text-center m-auto">
+                                <a href="#"><span><i class="fa fa-calendar-check-o" aria-hidden="true"></i>SEPT. 23, 2020</span></a>
+                                <a href="#"><span><i class="fa fa-user" aria-hidden="true"></i>ADMIN</span></a>
+                                <a href="#"><span><i class="fa fa-comments" aria-hidden="true"></i>3</span></a>
+                            </div>
+                            <div class="col-12 footer">
+                                <div class="text-title text-center mt-4 pb-3 col-10 m-auto">
+                                    <div>
+                                        <a href="">MARKETING STRATEGIES FOR DIGITAL ECOSYSTEM</a>
+                                    </div>
+                                </div>
+                                <div class="text-paragraph text-center col-10 m-auto">
+                                    <p class="pb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end single box post -->
+                    <!-- single box post -->
+                    <div class="PostSingle-box mb-4 mb-md-0 col-md-4">
+                        <a href="#">
+                            <div class="img img-2"></div>
+                        </a>
+                        <div class="body d-flex justify-content-center">
+                            <div class="body-heading text-center m-auto">
+                                <a href="#"><span><i class="fa fa-calendar-check-o" aria-hidden="true"></i>SEPT. 23, 2020</span></a>
+                                <a href="#"><span><i class="fa fa-user" aria-hidden="true"></i>ADMIN</span></a>
+                                <a href="#"><span><i class="fa fa-comments" aria-hidden="true"></i>3</span></a>
+                            </div>
+                            <div class="col-12 footer">
+                                <div class="text-title text-center mt-4 pb-3 col-10 m-auto">
+                                    <div>
+                                        <a href="">MARKETING STRATEGIES FOR DIGITAL ECOSYSTEM</a>
+                                    </div>
+                                </div>
+                                <div class="text-paragraph text-center col-10 m-auto">
+                                    <p class="pb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end single box post -->
+                    <!-- single box post -->
+                    <div class="PostSingle-box mb-4 mb-md-0 col-md-4">
+                        <a href="#">
+                            <div class="img img-3"></div>
+                        </a>
+                        <div class="body d-flex justify-content-center">
+                            <div class="body-heading text-center m-auto">
+                                <a href="#"><span><i class="fa fa-calendar-check-o" aria-hidden="true"></i>SEPT. 23, 2020</span></a>
+                                <a href="#"><span><i class="fa fa-user" aria-hidden="true"></i>ADMIN</span></a>
+                                <a href="#"><span><i class="fa fa-comments" aria-hidden="true"></i>3</span></a>
+                            </div>
+                            <div class="col-12 footer">
+                                <div class="text-title text-center mt-4 pb-3 col-10 m-auto">
+                                    <div>
+                                        <a href="">MARKETING STRATEGIES FOR DIGITAL ECOSYSTEM</a>
+                                    </div>
+                                </div>
+                                <div class="text-paragraph text-center col-10 m-auto">
+                                    <p class="pb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end single box post -->
+                </div>
+            </div>
+        </section>
+        <!-- end  post section  -->
+        <!-- subscribe section -->
+        <section id="subscribe" class="mb-5">
+             <div class="container">
+                 <div class="subscribe-container py-4 py-md-5">
+                    <div class="heading-title text-center pt-2">
+                        <h5 class="mb-2">
+                            JOIN US NEWSLETTER 
+                        </h5>
+                        <p>Sign Up to our Newsletter and get our latest news update</p>
+                    </div>
+                    <div class="body-input m-auto col-10 col-md-11  pb-2 ">
+                        <div class="d-flex justify-content-center m-auto col-md-6">
+                            <div class="col-9 ">
+                                <form action="" class="input-group">
+                                    <input placeholder="Enter email address..." type="text" class="form-control" name="subscribe" id="subscribe">
+                                </form>
+                            </div>
+                            <div class="">
+                                <button class="">
+                                    Subscribe
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+        </section>
+        <!-- end subscribe section -->
+        <!-- footer -->
+        <footer id="footer" class="pt-5">
+            <div class="container pt-5 pb-4 mt-3 mb-5">
+                <div class="row pt-5 mt-5">
+                    <div class="footer-logo col-md col-12 mb-5 mb-md-0">
+                        <div class="pb-4"><a class="text-white" href="#">EROO</a></div>
+                        <div class="pb-3"><p class="col-9">Far far away, behind the word mountains, far from the countries.</p></div>
+                        <div class="d-flex justify-content-start">
+                            <span>
+                                <a href="#" class="text-white">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </span>
+                            <span class="mx-3">
+                                <a href="#" class="text-white ">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </span>
+                            <span class="facebook-icon">
+                                <a href="#" class="text-white">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="nav-footer row col-md-6 col-12">
+                        <div class="nav-list col-12 col-md-4 mb-5 mb-md-0 p-md-0">
+                            <div class="nav-list-heading-tite pb-4">
+                                <h6 class="text-uppercase mb-0">Explore</h6>
+                            </div>
+                            <nav class="d-flex flex-column">
+                                <a class="text-capitalize" href="#"><i class="fas fa-angle-right"></i> About</a>
+                                <a class="text-capitalize" href="#"><i class="fas fa-angle-right"></i> contact</a>
+                                <a class="text-capitalize" href="#"><i class="fas fa-angle-right"></i> portfolio</a>
+                                <a class="text-capitalize" href="#"><i class="fas fa-angle-right"></i> blog</a>
+                            </nav>
+                        </div>
+                        <div class="nav-list col-12 col-md-4 mb-5 mb-md-0 p-md-0">
+                            <div class="nav-list-heading-tite pb-4">
+                                <h6 class="text-uppercase mb-0">info</h6>
+                            </div>
+                            <nav class="d-flex flex-column">
+                                <a class="text-capitalize" href="#"><i class="fas fa-angle-right"></i> join us</a>
+                                <a class="text-capitalize" href="#"><i class="fas fa-angle-right"></i> blog</a>
+                                <a class="text-capitalize" href="#"><i class="fas fa-angle-right"></i> privacy & policy</a>
+                                <a class="text-capitalize" href="#"><i class="fas fa-angle-right"></i> term & conditions</a>
+                            </nav>
+                        </div>
+                        <div class="nav-list col-12 col-md-4 mb-5 mb-md-0 ">
+                            <div class="nav-list-heading-tite pb-4">
+                                <h6 class="text-uppercase mb-0">company</h6>
+                            </div>
+                            <nav class="d-flex flex-column">
+                                <a class="text-capitalize" href="#"><i class="fas fa-angle-right"></i> about us</a>
+                                <a class="text-capitalize" href="#"><i class="fas fa-angle-right"></i> contact</a>
+                                <a class="text-capitalize" href="#"><i class="fas fa-angle-right"></i> blog</a>
+                                <a class="text-capitalize" href="#"><i class="fas fa-angle-right"></i> carees</a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="questions col-md col-12 mb-5 mb-md-0">
+                        <div class="questions-heading-tite pb-4">
+                            <h6 class="text-uppercase mb-0">have a questions ?</h6>
+                        </div>
+                        <div class="d-flex address col-11 col-lg-9">
+                            <div class="icon pe-3">
+                                <i class="fa fa-map" aria-hidden="true"></i>
+                            </div>
+                            <div class="text">
+                               <p> 203 Fake St. Mountain View, San Francisco, California, USA</p>
+                            </div>
+                        </div>
+                        <div class="number-email pb-3">
+                            <a href="#">
+                                <span class="pe-3" ><i class="fa fa-phone" aria-hidden="true"></i></span>
+                                <span>+2 392 3929 210</span>
+                            </a>
+                        </div>
+                        <div class="number-email">
+                            <a href="#">
+                                <span class="pe-3 " >
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                </span>
+                                <span>info@yourdomain.com</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="py-5  footer-copyright">
+                <div class="container ">
+                    <p class="m-0">Copyright ©2022 All rights reserved | This template is made with ❤ by Ahmadreza</p>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+    </main>
+    <!-- <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/TooltipPopover-codes.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/Leoding.js"></script>
+    <script src="https://kit.fontawesome.com/8c82115ba3.js" crossorigin="anonymous"></script>
+</body>
+</html>

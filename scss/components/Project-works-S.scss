@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+$color-black:#1a1a1a;
+$color-orange:#cdb30c;
+$color-BG-gray:#f4f5f9;
+$color-bg-progress:#e6e6e6;
+$color-text-black:rgba(0, 0, 0, 0.8);
+$color-bg-black-projects-S:#232429;
+$font-weight-500: 500;
+$font-weight-600: 600;
+$font-weight-700: 700;
+$font-size-large: 27px;
+$font-size-Xlarge: 34px;
+$font-size-Xsmale: 13px;
+$font-size-medium: 18px;
+
+
+@supports (scrollbar-color:blue red ){
+    *{
+        scrollbar-color:  rgb(82, 82, 82) $color-BG-gray;
+        scrollbar-width: thin;
+    }
+}
+
+#projects{
+
+    font-family: 'Roboto Condensed', sans-serif !important;
+
+    .project-works{
+
+        .heading-title{
+
+            h6{
+                font-size: $font-size-Xsmale;
+                color: $color-orange;
+                letter-spacing: $color-orange;
+                font-weight: $font-weight-700;
+            }
+            h5{
+                font-weight: $font-weight-700;
+                font-size: 27px;
+                letter-spacing: 3px;
+                line-height: 1.4;
+                color: $color-text-black;
+            }
+        }
+
+        .peopleSay{
+
+            .carousel{
+
+                .carousel-indicators{
+                    position: absolute;
+                    bottom: -2rem !important;
+                    z-index: 2;
+                    display: flex;
+                    justify-content: center;
+                    padding: 0;
+                    list-style: none;
+                    margin: 0;
+                    left: 0;
+                    right: 0;
+                }
+
+                .carousel-indicators [data-bs-target]{
+                    box-sizing: content-box;
+                    flex: 0 1 auto;
+                    width: 11px;
+                    height: 11px;
+                    padding: 0;
+                    margin-right: 3px;
+                    margin-left: 3px;
+                    text-indent: -999px;
+                    cursor: pointer;
+                    background-color: $color-orange;
+                    background-clip: padding-box;
+                    border: 0;
+                    transition: opacity .6s ease;
+                    border-radius: 50%;
+                }
+                
+                .singleBox{
+                    background-color: white;
+                    border-radius: 9px;
+
+                    .body{
+                        color: #a6a6a6;
+                        font-size: 16px;
+                        line-height: 1.7;
+                        font-weight: $font-weight-500;
+                        font-family: 'Open Sans', sans-serif !important;
+                    }
+                    .footer{
+
+                        div{
+
+                            &:first-of-type{
+                                margin-right: .9rem;
+                                img{
+                                    width: 5rem;
+                                    border-radius: 50%;
+                                }
+                            }
+
+                            &:last-of-type{
+                                
+                                .stars{
+                                    font-size: 11px;
+                                    color: $color-orange;
+                                }
+
+                                .text{
+                                    h5{
+                                        font-weight: $font-weight-500;
+                                        font-size: 20px;
+                                        padding-bottom: 5px;
+                                    }
+                                    h6{
+                                        font-weight: $font-weight-600;
+                                        font-size: $font-size-Xsmale;
+                                        color: $color-orange;
+                                        letter-spacing: 1px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .PeopleSay-container{
+                    margin: 0 -12px 0 -12px;
+
+                    .peopleSay-static{
+                        overflow-x: scroll;
+                        &::-webkit-scrollbar{
+                            height: 0px;
+                            background-color: $color-BG-gray;
+                            cursor: pointer;
+                            
+                        }
+                        &::-webkit-scrollbar-button{
+                            display: none;
+                        }
+                        &::-webkit-scrollbar-thumb{
+                            background-color: rgb(82, 82, 82);
+                            border-radius: 5px;
+                        }
+                        &:hover::-webkit-scrollbar{
+                            height: 7px;
+                            
+                        }
+                        
+                    }
+                }
+            }
+        }
+
+    }
+}

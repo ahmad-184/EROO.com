@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+#projects {
+  background-color: #f4f5f9;
+  position: relative;
+  z-index: 1;
+}
+
+#projects::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 60%;
+  z-index: -1;
+  background-color: #232429;
+}
+
+#projects .about-projects {
+  font-family: 'Roboto Condensed', sans-serif !important;
+}
+
+#projects .about-projects-title .title .text h6 {
+  font-size: 13px;
+  color: #cdb30c;
+  letter-spacing: #cdb30c;
+  font-weight: 600;
+}
+
+#projects .about-projects-title .title .text h1 {
+  font-weight: 700;
+  font-size: 27px;
+  letter-spacing: 2px;
+  line-height: 1.4;
+}
+
+#projects .about-projects-title .title .link a {
+  font-size: 13px;
+  color: #cdb30c;
+  border: 2px solid #cdb30c;
+  font-weight: 600;
+  padding: 5px 8px;
+}
+
+#projects .about-projects-title .title .link a:hover {
+  color: #e6e6e6;
+  border-color: white;
+}
+
+#projects .about-projects .projects-boxes .project-single-boxes-1 {
+  background: url(../img/projects-1.webp) center no-repeat !important;
+  background-size: cover !important;
+}
+
+#projects .about-projects .projects-boxes .project-single-boxes-2 {
+  background: url(../img/projects-2.webp) center no-repeat !important;
+  background-size: cover !important;
+}
+
+#projects .about-projects .projects-boxes .project-single-boxes-3 {
+  background: url(../img/project-3.webp) center no-repeat !important;
+  background-size: cover !important;
+}
+
+#projects .about-projects .projects-boxes .project-single-boxes-4 {
+  background: url(../img/project-4.webp) center no-repeat !important;
+  background-size: cover !important;
+}
+
+#projects .about-projects .projects-boxes .project-single-boxes-5 {
+  background: url(../img/project-5.webp) center no-repeat !important;
+  background-size: cover !important;
+}
+
+#projects .about-projects .projects-boxes .project-single-boxes-6 {
+  background: url(../img/project-6.webp) center no-repeat !important;
+  background-size: cover !important;
+}
+
+#projects .about-projects .projects-boxes .project-single-boxes {
+  overflow: hidden;
+  border-radius: 10px;
+  height: 360px;
+  background: url(../img/projects-1.webp) center no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: top .5s , bottom .5s;
+  transition: top .5s , bottom .5s;
+  padding: 0 15px;
+}
+
+#projects .about-projects .projects-boxes .project-single-boxes::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #232429;
+  opacity: .6;
+  z-index: -1;
+  -webkit-transition: top .7s ,bottom .7s;
+  transition: top .7s ,bottom .7s;
+  bottom: 100%;
+}
+
+#projects .about-projects .projects-boxes .project-single-boxes:hover::before {
+  bottom: 50%;
+}
+
+#projects .about-projects .projects-boxes .project-single-boxes::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #232429;
+  opacity: .6;
+  z-index: -1;
+  -webkit-transition: top .7s ,bottom .7s;
+  transition: top .7s ,bottom .7s;
+  top: 70%;
+}
+
+#projects .about-projects .projects-boxes .project-single-boxes:hover::after {
+  top: 50% !important;
+}
+
+#projects .about-projects .projects-boxes .project-single-boxes .body {
+  width: 100%;
+}
+
+#projects .about-projects .projects-boxes .project-single-boxes .body .title h6 {
+  color: #cdb30c;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+#projects .about-projects .projects-boxes .project-single-boxes .body .title h5 {
+  font-size: 20px;
+  letter-spacing: 2.5px;
+  font-weight: 600;
+}
+
+#projects .about-projects .projects-boxes .project-single-boxes .body .link a {
+  padding: 8px 10px;
+  background-color: #cdb30c;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  -webkit-animation: animation 2.5s infinite;
+          animation: animation 2.5s infinite;
+  position: relative;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+@-webkit-keyframes animation {
+  0% {
+    -webkit-box-shadow: 0 0px 0px 8px #cdb30c8f;
+            box-shadow: 0 0px 0px 8px #cdb30c8f;
+  }
+  50% {
+    -webkit-box-shadow: 0 0px 0px 9px rgba(0, 0, 0, 0.123);
+            box-shadow: 0 0px 0px 9px rgba(0, 0, 0, 0.123);
+  }
+  100% {
+    -webkit-box-shadow: 0 0px 0px 8px #cdb30c8f;
+            box-shadow: 0 0px 0px 8px #cdb30c8f;
+  }
+}
+
+@keyframes animation {
+  0% {
+    -webkit-box-shadow: 0 0px 0px 8px #cdb30c8f;
+            box-shadow: 0 0px 0px 8px #cdb30c8f;
+  }
+  50% {
+    -webkit-box-shadow: 0 0px 0px 9px rgba(0, 0, 0, 0.123);
+            box-shadow: 0 0px 0px 9px rgba(0, 0, 0, 0.123);
+  }
+  100% {
+    -webkit-box-shadow: 0 0px 0px 8px #cdb30c8f;
+            box-shadow: 0 0px 0px 8px #cdb30c8f;
+  }
+}
+
+#projects .about-projects .projects-boxes .project-single-boxes .body .link a:hover {
+  color: black;
+  background-color: #e6e6e6;
+}
+/*# sourceMappingURL=Project-S.css.map */

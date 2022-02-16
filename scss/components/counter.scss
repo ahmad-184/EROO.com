@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+$color-black:#1a1a1a;
+$color-orange:#cdb30c;
+
+#counter{
+    font-family: 'Roboto Condensed', sans-serif !important;
+    background: url(../img/counter.webp) center no-repeat fixed;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    &::after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #232429;
+        z-index: -1;
+        opacity: .8;
+    }
+
+    .single-counter-box{
+
+        .icon{
+            margin-right: 1rem;
+            background-color: #cdb30c;
+            border-radius: 3px;
+            padding: 7px 6px;
+
+            span{
+                // background-color: $color-orange;
+                // padding: 22px 5px 28px 5px;
+                // border-radius: 3px;
+                img{
+                    width: 55px;
+                }
+            }
+        }
+
+        .title{
+
+            span{
+                line-height: 55px;
+                &:first-of-type{
+                    font-size: 34px;
+                    font-weight: 700;
+                }
+                &:last-of-type{
+                    font-size: 15px;
+                    font-weight: 700;
+                    color: rgba(255, 255, 255, 0.9);
+                    line-height: 14px;
+                }
+            }
+        }
+    }
+}

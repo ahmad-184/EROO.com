@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+$color-black:#1a1a1a;
+$color-orange:#cdb30c;
+$color-BG-gray:#f4f5f9;
+$color-bg-progress:#e6e6e6;
+$color-text-black:rgba(0, 0, 0, 0.8);
+$color-bg-black-projects-S:#232429;
+$color-text-footer:rgba(255, 255, 255, 0.651);
+$font-weight-500: 500;
+$font-weight-600: 600;
+$font-weight-700: 700;
+$font-size-large: 27px;
+$font-size-Xlarge: 34px;
+$font-size-Xsmale: 13px;
+$font-size-medium: 18px;
+
+@mixin heading-title {
+    font-size: 19px !important;
+    font-weight: $font-weight-700 !important; 
+    color: white !important;
+}
+
+#footer{
+    font-family: 'Roboto Condensed', sans-serif !important;
+    background-color: #232429;
+
+    .footer-logo{
+        div{
+            &:nth-child(1){
+                @include heading-title;
+            }
+            &:nth-child(2){
+                color: rgba(255, 255, 255, 0.774);
+                line-height: 1.8;
+                font-size: 17px;
+            }
+            &:nth-child(3){
+                span{
+                    a{
+                        background-color: $color-orange;
+                        font-size: $font-size-Xsmale;
+                        padding: 13px 14px;
+                        border-radius: 30%;
+                        transition: background-color .2s, color .2s .1s, box-shadow .3s;
+                        &:hover{
+                            background-color: white;
+                            color: $color-bg-black-projects-S !important;
+                            box-shadow: 0 0 0px 6px #cdb30c80;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .nav-footer{
+        .nav-list{
+            &-heading-tite{
+                padding-bottom: 1.7rem !important;
+
+                h6{
+                    @include heading-title;
+                }
+            }
+            nav{
+                a{  
+                    transition: all .2s;
+                    font-size: 17px;
+                    color: $color-text-footer;
+                    line-height: 2.7rem;
+                    i{
+                        font-size: 20px;
+                        margin-right: 5px;
+                    }
+                    &:hover{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    .questions{
+        &-heading-tite{
+            padding-bottom: 2.1rem !important;
+
+            h6{
+                @include heading-title();
+            }
+        }
+        .address{
+            color: rgba(255, 255, 255, 0.774);
+            .icon{
+                font-size: 19px;
+                color: $color-orange;
+            }
+            .text{
+                font-size: 18px;
+            }
+        }
+        .number-email{
+            a{
+                span{
+                    &:first-of-type{
+                        color: $color-orange;
+                        font-size: 13px;
+                    }
+                    color: rgba(255, 255, 255, 0.774);
+                }
+            }
+        }
+    }
+
+    .footer-copyright{
+        background-color: #1e1f23;
+        color: $color-text-footer;
+        font-size: 18px;
+    }
+}

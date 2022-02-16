@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+$color-black:#1a1a1a;
+$color-orange:#cdb30c;
+
+#services{
+    font-family: 'Roboto Condensed', sans-serif !important;
+    .bg-services{
+        background: url(../img/services-bg.webp) ;
+        .services-title{
+            h1{
+                font-size: 28px;
+                font-weight: 700;
+                letter-spacing: 2px;
+                width: 20rem;
+            }
+            p{
+                color: #ffffff7d;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 1.8;
+                letter-spacing: 1px;
+            }
+        }
+        .active{
+            background-color: $color-orange !important;
+            .icon{
+                font-size: 50px;
+                color: black !important;
+            }
+            h5{
+                font-weight: 700;
+                letter-spacing: 1px;
+                font-size: 18px;
+                color: black !important;
+            }
+        }
+        .single-services-content{
+            background-color: $color-black;
+            border-radius: 5px;
+            .icon{
+                font-size: 50px;
+                color: $color-orange;
+            }
+            h5{
+                font-weight: 700;
+                letter-spacing: 1px;
+                font-size: 18px;
+            }
+            &:hover{
+                background-color: $color-orange;
+            }
+            &:hover h5{
+                color: $color-black !important;
+            }
+            &:hover .icon{
+                color: $color-black !important;
+            }
+            .link-content{
+                top: 3.6rem;
+                left: -11px;
+                .link-arrow{
+                    a{
+                        padding: 12px;
+                        border-radius: 50%;
+                        background-color: $color-black;
+                        border: 2px solid $color-orange;
+                        color: $color-orange;
+                    }
+                }
+            }
+        }
+    }
+}
